@@ -1,0 +1,220 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "tex t": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "drinks": [
+    {
+      "title": "Fanta",
+      "company_name": "Coca-Cola",
+      "price": 7000,
+      "volume": "0.5L",
+      "type": "gazli",
+      "image": "https://www.bbassets.com/media/uploads/p/l/251019_8-fanta-soft-drink-orange-flavoured.jpg",
+      "id": "25eb"
+    },
+    {
+      "title": "Sprite",
+      "company_name": "Coca-Cola",
+      "price": 7000,
+      "volume": "0.5L",
+      "type": "gazli",
+      "image": "https://cdn11.bigcommerce.com/s-zj6x66u8ej/images/stencil/1500x1500/products/129/1199/00049000007640_A1N1__06655.1738184844.png?c=1",
+      "id": "1f13"
+    },
+    {
+      "title": "Pepsi",
+      "company_name": "PepsiCo",
+      "price": 6800,
+      "volume": "0.5L",
+      "type": "gazli",
+      "image": "https://images.albertsons-media.com/is/image/ABS/108010327-ECOM?$ng-ecom-pdp-mobile$&defaultImage=Not_Available",
+      "id": "be10"
+    },
+    {
+      "title": "7UP",
+      "company_name": "PepsiCo",
+      "price": 6800,
+      "volume": "0.5L",
+      "type": "gazli",
+      "image": "https://knjaz.rs/wp-content/uploads/2023/02/7UP-0.5L-PET-img-min.jpg",
+      "id": "f652"
+    },
+    {
+      "title": "Cola",
+      "company_name": "RC Cola",
+      "price": 6000,
+      "volume": "0.5L",
+      "type": "gazli",
+      "image": "https://m.media-amazon.com/images/I/81kx2IPueEL.jpg",
+      "id": "414c"
+    },
+    {
+      "title": "Fuse Tea",
+      "company_name": "Coca-Cola",
+      "price": 7500,
+      "volume": "0.5L",
+      "type": "gazsiz",
+      "image": "https://dostavo4ka.uz/upload-file/2021/05/05/2130/750x750-6e7e29b5-8151-470b-a097-e690984abead.jpg",
+      "id": "d558"
+    },
+    {
+      "title": "Lipton Ice Tea",
+      "company_name": "Unilever",
+      "price": 7700,
+      "volume": "0.5L",
+      "type": "gazsiz",
+      "image": "https://zoom.ocado.com/productImages/476/476707011_476707011_1_1729859524000_1280x1280.jpg",
+      "id": "d067"
+    },
+    {
+      "title": "Bonaqua",
+      "company_name": "Coca-Cola",
+      "price": 5000,
+      "volume": "0.5L",
+      "type": "gazsiz",
+      "image": "https://www.coca-cola.com/content/dam/onexp/mv/home-images/bonaqua/BonAqua-desktop.png",
+      "id": "9f52"
+    },
+    {
+      "title": "Aqua Minerale",
+      "company_name": "PepsiCo",
+      "price": 5000,
+      "volume": "0.5L",
+      "type": "gazli",
+      "image": "https://lukime.com/media/catalog/product/cache/55ba68d78382973c4e4c1d07ca088e57/r/u/ru_pim_13178001003_01_vlesvhsqfdifizuj.png",
+      "id": "6d3d"
+    },
+    {
+      "title": "Red Bull",
+      "company_name": "Red Bull GmbH",
+      "price": 15000,
+      "volume": "0.25L",
+      "type": "gazli",
+      "image": "https://i5.walmartimages.com/seo/Red-Bull-Energy-Drink-114mg-Caffeine-12-fl-oz-Can_cc297042-66be-4db1-9ff0-e626f6c43322.d5c5ca669d0978adca72bf0c7504e6ed.jpeg",
+      "id": "80ec"
+    },
+    {
+      "title": "Burn",
+      "company_name": "Coca-Cola",
+      "price": 14000,
+      "volume": "0.25L",
+      "type": "gazli",
+      "image": "https://i0.wp.com/italiaverace.com/wp-content/uploads/2023/11/219881_1.webp",
+      "id": "3482"
+    },
+    {
+      "title": "Monster Energy",
+      "company_name": "Monster Beverage",
+      "price": 16000,
+      "volume": "0.5L",
+      "type": "gazli",
+      "image": "https://images.albertsons-media.com/is/image/ABS/108101037-C1N1?$ng-ecom-pdp-desktop$&defaultImage=Not_Available",
+      "id": "4cd1"
+    },
+    {
+      "title": "Schweppes",
+      "company_name": "Coca-Cola",
+      "price": 8000,
+      "volume": "0.5L",
+      "type": "gazli",
+      "image": "https://cdn.mafrservices.com/sys-master-root/h0b/hc9/63541742338078/2140617_main.jpg?im=Resize=480",
+      "id": "a824"
+    },
+    {
+      "title": "Zam-Zam",
+      "company_name": "Zamzam Co.",
+      "price": 4000,
+      "volume": "0.5L",
+      "type": "gazsiz",
+      "image": "https://www.umanas.ca/wp-content/uploads/2020/04/zamzam-waterrr.jpg",
+      "id": "5b3d"
+    },
+    {
+      "title": "Nosh",
+      "company_name": "Local",
+      "price": 3500,
+      "volume": "0.5L",
+      "type": "gazli",
+      "image": "https://www.instacart.com/image-server/1864x1864/www.instacart.com/assets/domains/product-image/file/large_4d41a4d1-990f-4e94-a61d-d3fc7b0bc19a.PNG",
+      "id": "1094"
+    },
+    {
+      "title": "Bliss",
+      "company_name": "Local",
+      "price": 5000,
+      "volume": "0.5L",
+      "type": "gazsiz",
+      "image": "https://agromir.uz/uploads/posts/bliss-active-energy1-1695974239.jpg",
+      "id": "9eab"
+    },
+    {
+      "title": "Sochnaya dolina",
+      "company_name": "Local",
+      "price": 9000,
+      "volume": "1L",
+      "type": "gazsiz",
+      "image": "https://bozorcom.ams3.cdn.digitaloceanspaces.com/media/products/anorr.png",
+      "id": "e75a"
+    },
+    {
+      "title": "Rich",
+      "company_name": "Coca-Cola",
+      "price": 9500,
+      "volume": "1L",
+      "type": "gazsiz",
+      "image": "https://click-or-die.ru/app/uploads/2022/12/image-16-2-675x680.jpg",
+      "id": "2caf"
+    },
+    {
+      "title": "Fizzy Apple",
+      "company_name": "Local",
+      "price": 4000,
+      "volume": "0.5L",
+      "type": "gazli",
+      "image": "https://www.radnorhills.co.uk/app/uploads/2022/03/RAD_223-653x653.jpeg",
+      "id": "c788"
+    },
+    {
+      "title": "Natural Water",
+      "company_name": "Nestle",
+      "price": 3500,
+      "volume": "0.5L",
+      "type": "gazsiz",
+      "image": "https://images.uzum.uz/cq3tsqgsarnfdo9aig30/original.jpg",
+      "id": "125b"
+    },
+    {
+      "id": "1504",
+      "title": "dinay",
+      "company_name": "dinay",
+      "price": "12000",
+      "volume": "1l",
+      "type": "gazsiz",
+      "image": "asdasdsd"
+    }
+  ]
+}
