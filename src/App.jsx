@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { api } from "./api/api";
 import { Header } from "antd/es/layout/layout";
-import { Card, Avatar, Tag, Button, Modal, Form, Input, Popconfirm, } from "antd";
+import { Card, Avatar, Tag, Button, Modal, Form, Input, Popconfirm, Empty, } from "antd";
 
 const { Meta } = Card;
 
@@ -73,7 +73,9 @@ const App = () => {
       </Header>
 
       <h2 className="text-center my-10 text-4xl font-semibold">Drinks</h2>
-
+      {
+        !data?.length && <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
+      }
       <div className="container mx-auto flex flex-wrap justify-center gap-[30px]">
         {data?.map((item, i) => (
           <Card
