@@ -11,7 +11,8 @@ const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editItem, setEditItem] = useState(null);
   const [createLoading, setCreateLaoding] = useState(false);
-
+  const [form] = Form.useForm();
+  const [formLayout, setFormLayout] = useState('vertical');
   const onFinish = values => {
     setCreateLaoding(true);
     if (editItem) {
@@ -147,13 +148,13 @@ const App = () => {
         >
           <Form
             name="basic"
-            labelCol={{ span: 8 }}
-            wrapperCol={{ span: 16 }}
             style={{ maxWidth: 600 }}
+            layout={formLayout}
             initialValues={{ remember: true }}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
             autoComplete="off"
+            className="flex flex-col"
           >
             <Form.Item
               label="Title"
@@ -205,7 +206,7 @@ const App = () => {
 
 
             <Form.Item label={null}>
-              <Button type="primary" htmlType="submit" className="w-full">
+              <Button type="primary" htmlType="submit" loading={createLoading} className="w-full">
                 {editItem ? "Update" : "Create"}
               </Button>
             </Form.Item>
