@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { api } from "./api/api";
 import { Header } from "antd/es/layout/layout";
-import { Card, Avatar, Tag, Button, Modal, Form, Input, } from "antd";
+import { Card, Avatar, Tag, Button, Modal, Form, Input, Popconfirm, } from "antd";
 
 const { Meta } = Card;
 
@@ -49,6 +49,10 @@ const App = () => {
   };
   const handleOk = () => {
     setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+    setEditItem(null);
   };
   useEffect(() => {
     api.get("/drinks").then((res) => {
@@ -114,8 +118,18 @@ const App = () => {
               }
             />
             <div className="mt-[1.5rem] flex gap-3">
-              <Button>Edit </Button>
-              <Button danger>Delete </Button>
+              <Button onClick={() => handleEdit(item)} >Edit </Button>
+              <Popconfirm
+                title="Delete the task"
+                description="Are you sure to delete this task?"
+                onConfirm={() => handleDelete(item.id)}
+                okText="Yes"
+                cancelText="No"
+              >
+                <Button htmlType="button" danger>
+                  Delete
+                </Button>
+              </Popconfirm>
             </div>
 
           </Card>
@@ -123,77 +137,80 @@ const App = () => {
       </div>
 
       {isModalOpen && (
-      <Modal
-        title="Create a new drink"
-        open={isModalOpen}
-        footer={false}
-        onOk={handleOk}>
-        <Form
-          name="basic"
-          labelCol={{ span: 8 }}
-          wrapperCol={{ span: 16 }}
-          style={{ maxWidth: 600 }}
-          initialValues={{ remember: true }}
-          onFinish={onFinish}
-          onFinishFailed={onFinishFailed}
-          autoComplete="off"
+        <Modal
+          title="Create a new drink"
+          closable={{ "aria-label": "Custom Close Button" }}
+          open={isModalOpen}
+          onOk={handleOk}
+          onCancel={handleCancel}
+          footer={false}
         >
-          <Form.Item
-            label="Title"
-            name="title"
-            rules={[{ required: true, message: 'Please, enter title!' }]}
+          <Form
+            name="basic"
+            labelCol={{ span: 8 }}
+            wrapperCol={{ span: 16 }}
+            style={{ maxWidth: 600 }}
+            initialValues={{ remember: true }}
+            onFinish={onFinish}
+            onFinishFailed={onFinishFailed}
+            autoComplete="off"
           >
-            <Input />
-          </Form.Item>
+            <Form.Item
+              label="Title"
+              name="title"
+              rules={[{ required: true, message: 'Please, enter title!' }]}
+            >
+              <Input />
+            </Form.Item>
 
-          <Form.Item
-            label="Company name"
-            name="company_name"
-            rules={[{ required: true, message: 'Please, enter company!' }]}
-          >
-            <Input />
-          </Form.Item>
+            <Form.Item
+              label="Company name"
+              name="company_name"
+              rules={[{ required: true, message: 'Please, enter company!' }]}
+            >
+              <Input />
+            </Form.Item>
 
-          <Form.Item
-            label="Price"
-            name="price"
-            rules={[{ required: true, message: 'Please, enter price!' }]}
-          >
-            <Input />
-          </Form.Item>
+            <Form.Item
+              label="Price"
+              name="price"
+              rules={[{ required: true, message: 'Please, enter price!' }]}
+            >
+              <Input />
+            </Form.Item>
 
-          <Form.Item
-            label="Volume"
-            name="volume"
-            rules={[{ required: true, message: 'Please, enter volume!' }]}
-          >
-            <Input />
-          </Form.Item>
+            <Form.Item
+              label="Volume"
+              name="volume"
+              rules={[{ required: true, message: 'Please, enter volume!' }]}
+            >
+              <Input />
+            </Form.Item>
 
-          <Form.Item
-            label="Type"
-            name="type"
-            rules={[{ required: true, message: 'Please, enter type!' }]}
-          >
-            <Input />
-          </Form.Item>
+            <Form.Item
+              label="Type"
+              name="type"
+              rules={[{ required: true, message: 'Please, enter type!' }]}
+            >
+              <Input />
+            </Form.Item>
 
-          <Form.Item
-            label="Image"
-            name="image"
-            rules={[{ required: true, message: 'Please, enter image URL!' }]}
-          >
-            <Input />
-          </Form.Item>
+            <Form.Item
+              label="Image"
+              name="image"
+              rules={[{ required: true, message: 'Please, enter image URL!' }]}
+            >
+              <Input />
+            </Form.Item>
 
 
-          <Form.Item label={null}>
-            <Button type="primary" htmlType="submit" >
-              Create
-            </Button>
-          </Form.Item>
-        </Form>
-      </Modal>
+            <Form.Item label={null}>
+              <Button type="primary" htmlType="submit" className="w-full">
+                {editItem ? "Update" : "Create"}
+              </Button>
+            </Form.Item>
+          </Form>
+        </Modal>
 
       )}
     </div>

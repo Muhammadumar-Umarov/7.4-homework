@@ -28,33 +28,6 @@
   },
   "drinks": [
     {
-      "title": "Fanta",
-      "company_name": "Coca-Cola",
-      "price": 7000,
-      "volume": "0.5L",
-      "type": "gazli",
-      "image": "https://www.bbassets.com/media/uploads/p/l/251019_8-fanta-soft-drink-orange-flavoured.jpg",
-      "id": "25eb"
-    },
-    {
-      "title": "Sprite",
-      "company_name": "Coca-Cola",
-      "price": 7000,
-      "volume": "0.5L",
-      "type": "gazli",
-      "image": "https://cdn11.bigcommerce.com/s-zj6x66u8ej/images/stencil/1500x1500/products/129/1199/00049000007640_A1N1__06655.1738184844.png?c=1",
-      "id": "1f13"
-    },
-    {
-      "title": "Pepsi",
-      "company_name": "PepsiCo",
-      "price": 6800,
-      "volume": "0.5L",
-      "type": "gazli",
-      "image": "https://images.albertsons-media.com/is/image/ABS/108010327-ECOM?$ng-ecom-pdp-mobile$&defaultImage=Not_Available",
-      "id": "be10"
-    },
-    {
       "title": "7UP",
       "company_name": "PepsiCo",
       "price": 6800,
